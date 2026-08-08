@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#07111f" />
     <title>Battlegrid — Team Sweden</title>
+    <script>
+      // Relative asset URLs require a trailing slash on directory URLs. GitHub
+      // Pages does not consistently add one for copied subdirectories.
+      if (!location.pathname.endsWith("/") && !location.pathname.endsWith(".html")) {
+        location.replace(`${location.pathname}/${location.search}${location.hash}`);
+      }
+    </script>
     <script type="module" crossorigin src="./assets/index-BcI8NlQH.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-CIM8rCVL.css">
   </head>
